@@ -1,0 +1,131 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>En-Lighten/E LLC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="{% static 'images/logo/favicon.ico'%}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/logo/favicon.ico'%}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="{% static 'css/core.css'%}">
+    <!-- icofont -->
+    <link rel="stylesheet" href="{% static 'css/icofont.css'%}">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="{% static 'css/shortcode/shortcodes.css'%}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+    <!-- User style -->
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/custom.css'%}">
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js'%}"></script>
+</head>
+<body>
+     <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Body main wrapper start -->
+    <div class="wrapper">
+        <!-- Start of header area -->
+        <header id="header" class="top-header-area transparent-header headroom headroom--pinned">
+            <div class="header-area">
+                <div class="container hidden-xs">
+                    <div class="row hidden-xs">
+                        <div class="col-md-2 col-sm-12">
+                            <div class="logo">
+                                <a href="index.html"><img src="{% static 'images/logo/1.png'%}" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-10">
+                            <div class="main-menu-area">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        v
+                                        <!-- <span class="icon-bar"></span> -->
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="collapse navbar-collapse text-center primary-menu">
+                                    <ul class="nav navbar-nav main-menu clearfix">
+                                        <li class="active smoot-menu drop"><a href="index-animation-text.html">HOME</a>
+
+                                        </li>
+                                        <li class="smoot-menu"><a href="#about-us"> ABOUT US</a></li>
+                                        <li><a href="#our-service-area">OUR SERVICES</a></li>
+                                        <li class="smoot-menu drop"><a href="#quality">DIRECTION</a>
+
+                                        </li>
+
+                                        <li class="smoot-menu"><a href="#contact">CONTACT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- mobile-menu-area start -->
+                <div class="mobile-menu-area hidden-md hidden-lg hidden-sm">
+                    <div class="fluid-container">
+                        <div class="mobile-menu clearfix">
+                            <nav id="mobile_dropdown">
+                                <ul>
+
+                                    <li><a href="#our-service-area">Services</a>
+
+                                    </li>
+                                    <li><a href="#about-us">About Us</a>
+
+                                    </li>
+                                    <li><a href="#quailty">DIRECTION</a>
+
+                                    </li>
+                                    <li><a href="#contact">Contact</a>
+                                       
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile-menu-area end -->
+            </div>
+        </header>
+        <!-- End of header area -->
+    {% block content %} {% endblock %}
+
+   <!-- Placed js at the end of the document so the pages load faster -->
+        <!-- jquery latest version -->
+        <script src="{% static 'js/vendor/jquery-1.12.1.min.js'%}"></script>
+        <!-- Bootstrap framework js -->
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+        <!-- All js plugins included in this file. -->
+        <script src="{% static 'js/plugins.js'%}"></script>
+        <!-- owl carousel js -->
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+        <!-- headroom js -->
+        <script src="{% static 'js/headroom.js'%}"></script>
+        <script src="{% static 'js/jQuery.headroom.js'%}"></script>
+        <!-- waypoints js -->
+        <script src="{% static 'js/waypoints.min.js'%}"></script>
+        <!-- Main js file that contents all jQuery plugins activation. -->
+        <script src="{% static 'js/main.js'%}"></script>
+         <script src="{% static 'js/main1.js'%}"></script>
+</body>
+</html>
